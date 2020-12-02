@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 给定一个字符串S，检查是否能重新排布其中的字母，使得两相邻的字符不同。
- * <p>
+ *
  * 若可行，输出任意可行的结果。若不可行，返回空字符串。
  */
 public class T767_重构字符串 {
@@ -21,10 +21,10 @@ public class T767_重构字符串 {
         int len = S.length();
         int[] alphabet = new int[26];
         int max = 0;
-        int maxAlphbet = 0;
+        int maxAlphabet = 0;
         for (char c : S.toCharArray()) {
             if (max < ++alphabet[c - 'a']) {
-                maxAlphbet = c - 'a';
+                maxAlphabet = c - 'a';
                 max++;
             }
         }
@@ -34,8 +34,8 @@ public class T767_重构字符串 {
 
         int index = 0;
         char[] res = new char[len];
-        while (alphabet[maxAlphbet]-- > 0) {
-            res[index] = (char) (maxAlphbet + 'a');
+        while (alphabet[maxAlphabet]-- > 0) {
+            res[index] = (char) (maxAlphabet + 'a');
             index += 2;
         }
 
