@@ -5,7 +5,6 @@ import java.util.List;
 
 public class T842_将数组拆分成斐波那契序列 {
     public static void main(String[] args) {
-        // "13205,8,13213"
         String s = "0123";
         List<Integer> res = splitIntoFibonacci(s);
         System.out.println(res.toString());
