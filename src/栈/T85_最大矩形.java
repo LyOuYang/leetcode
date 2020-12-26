@@ -1,4 +1,4 @@
-package 动态规划;
+package 栈;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
